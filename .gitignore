@@ -7,3 +7,5 @@
 !vendor/**/*
 !.gitmodules
 !.gitconfig
+!README.md
+!cassini-setup.sh
