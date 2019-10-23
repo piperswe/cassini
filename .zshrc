@@ -1,4 +1,5 @@
-source ~/.antigen.zsh
+export VENDOR="$HOME/vendor"
+source "$VENDOR/antigen/antigen.zsh"
 
 antigen use oh-my-zsh
 

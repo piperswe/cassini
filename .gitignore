@@ -2,3 +2,8 @@
 !.gitignore
 !.zshrc
 !.antigen.zsh
+!vendor
+!vendor/*
+!vendor/**/*
+!.gitmodules
+!.gitconfig
