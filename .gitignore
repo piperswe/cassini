@@ -9,3 +9,8 @@
 !.gitconfig
 !README.md
 !cassini-setup.sh
+!.emacs.d
+!.emacs.d/*
+!.emacs.d/**/*
+.emacs.d/auto-save-list
+.emacs.d/elpa
