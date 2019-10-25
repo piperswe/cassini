@@ -26,6 +26,7 @@ cask "jetbrains-toolbox"
 cask "middleclick"
 cask "slack"
 cask "tunnelblick"
+cask "zoomus"
 cask "adoptopenjdk/openjdk/adoptopenjdk8"
 mas "Disk Speed Test", id: 425264550
 mas "GarageBand", id: 682658836
