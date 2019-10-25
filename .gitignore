@@ -14,4 +14,7 @@
 !.emacs.d/**/*
 .emacs.d/auto-save-list
 .emacs.d/elpa
+!.config
+!.config/nvim
 !.config/nvim/init.vim
+!Brewfile
