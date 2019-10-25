@@ -17,7 +17,7 @@ source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.in
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 
 zsh-commit() {
-	git commit --author=".zshrc <https://github.com/piperswe/cassini/blob/master/.zshrc>" -m "$1" -m "Co-authored-by: $(git config user.name) <$(git config user.email)>"
+	git commit --no-verify --author=".zshrc <https://github.com/piperswe/cassini/blob/master/.zshrc>" -m "$1" -m "Co-authored-by: $(git config user.name) <$(git config user.email)>"
 }
 
 UNWRAPPED_BREW="/usr/local/bin/brew"
