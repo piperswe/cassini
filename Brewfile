@@ -6,6 +6,7 @@ tap "homebrew/services"
 brew "ant"
 brew "aws-iam-authenticator"
 brew "awscli"
+brew "coreutils"
 brew "elasticsearch@2.4", restart_service: true
 brew "git"
 brew "git-lfs"
