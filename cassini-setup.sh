@@ -20,6 +20,13 @@ git pull
 echo "  Downloading submodules..."
 git submodule init
 git submodule update
+echo "Configuring Homebrew..."
+echo "  Tapping Homebrew/bundle..."
+brew tap Homebrew/bundle
+echo "  Installing mas..."
+brew install mas
+echo "  Restoring Brewfile..."
+brew bundle
 echo "Configuring zsh..."
 echo "  Downloading Antigen dependencies..."
 zsh .zshrc
