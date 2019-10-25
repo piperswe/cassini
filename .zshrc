@@ -15,3 +15,30 @@ alias kstage="kubectl --context=stage"
 alias kprod="kubectl --context=prod"
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+
+UNWRAPPED_BREW="/usr/local/bin/brew"
+brew() {
+	"${UNWRAPPED_BREW}" "${@}"
+	"${UNWRAPPED_BREW}" bundle dump --file=~/Brewfile --force
+	pushd ~
+	git add Brewfile
+	git commit -m "brew ${*}"
+	git push
+	popd
+}
+
+UNWRAPPED_MAS="/usr/local/bin/mas"
+mas() {
+	if [[ "x$1" = "xuninstall" ]]
+	then
+		sudo "${UNWRAPPED_MAS}" "${@}"
+	else
+		"${UNWRAPPED_MAS}" "${@}"
+	fi
+	"${UNWRAPPED_BREW}" bundle dump --file=~/Brewfile --force
+	pushd ~
+	git add Brewfile
+	git commit -m "mas ${*}"
+	git push
+	popd
+}
