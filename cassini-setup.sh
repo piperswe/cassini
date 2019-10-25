@@ -33,3 +33,10 @@ zsh .zshrc
 echo "  Changing shell..."
 echo "    Enter your password to change your shell:"
 chsh -s /bin/zsh
+echo "Installing gems..."
+echo "  Installing bundler..."
+zsh -c "source .zshrc && gem install bundler"
+echo "  Running bundle install..."
+zsh -c "source .zshrc && bundle install"
+echo "  Running overcommit..."
+zsh -c "source .zshrc && bundle exec overcommit --install"
