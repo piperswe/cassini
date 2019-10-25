@@ -16,13 +16,17 @@ alias kprod="kubectl --context=prod"
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 
+zsh-commit() {
+	git commit --author=".zshrc <https://github.com/piperswe/cassini/blob/master/.zshrc>" -m "$1" -m "Co-authored-by: $(git config user.name) <$(git config user.email)>"
+}
+
 UNWRAPPED_BREW="/usr/local/bin/brew"
 brew() {
 	"${UNWRAPPED_BREW}" "${@}"
 	"${UNWRAPPED_BREW}" bundle dump --file=~/Brewfile --force
 	pushd ~
 	git add Brewfile
-	git commit -m "brew ${*}"
+	zsh-commit "brew ${*}"
 	git push
 	popd
 }
@@ -38,7 +42,7 @@ mas() {
 	"${UNWRAPPED_BREW}" bundle dump --file=~/Brewfile --force
 	pushd ~
 	git add Brewfile
-	git commit -m "mas ${*}"
+	zsh-commit "mas ${*}"
 	git push
 	popd
 }
