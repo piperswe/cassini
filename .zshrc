@@ -1,3 +1,5 @@
+ssh-add -K
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block, everything else may go below.
@@ -16,7 +18,6 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen theme romkatv/powerlevel10k
 
 antigen apply
-ssh-add -K
 
 alias kroot="kubectl --context=root"
 alias kdev="kubectl --context=dev"
