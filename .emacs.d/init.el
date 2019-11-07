@@ -28,3 +28,11 @@ There are two things you can do about this warning:
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(defun add-to-path
+  (new-item)
+  (list
+   (setenv "PATH" (concat new-item ":" (getenv "PATH")))
+   (setq exec-path (append (list new-item) exec-path))))
+
+(add-to-path "/usr/local/opt/coreutils/libexec/gnubin")
