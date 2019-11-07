@@ -2,6 +2,7 @@
 !.gitignore
 !.zshrc
 !.antigen.zsh
+!.p10k.zsh
 !vendor
 !vendor/*
 !vendor/**/*
