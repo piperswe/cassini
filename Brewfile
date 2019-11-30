@@ -33,6 +33,7 @@ cask "slack"
 cask "sublime-text"
 cask "tableau"
 cask "tunnelblick"
+cask "virtualbox"
 cask "zoomus"
 cask "adoptopenjdk/openjdk/adoptopenjdk8"
 mas "Disk Speed Test", id: 425264550
