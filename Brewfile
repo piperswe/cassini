@@ -12,6 +12,7 @@ brew "coreutils"
 brew "elasticsearch@2.4", restart_service: true
 brew "git"
 brew "git-lfs"
+brew "ipfs"
 brew "jq"
 brew "kubernetes-cli"
 brew "mas"
