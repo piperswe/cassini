@@ -41,6 +41,7 @@ cask "sublime-text"
 cask "tableau"
 cask "tunnelblick"
 cask "virtualbox"
+cask "visual-studio-code"
 cask "zoomus"
 mas "Disk Speed Test", id: 425264550
 mas "GarageBand", id: 682658836
