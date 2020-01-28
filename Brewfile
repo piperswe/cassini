@@ -57,4 +57,5 @@ mas "Keynote", id: 409183694
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Trello", id: 1278508951
 mas "WireGuard", id: 1451685025
