@@ -23,7 +23,7 @@ brew "mas"
 brew "neovim"
 brew "p7zip"
 brew "pandoc"
-brew "python@2"
+brew "python@2", link: false
 brew "ruby"
 brew "sbcl"
 brew "terminal-notifier"
