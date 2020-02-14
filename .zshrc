@@ -63,3 +63,5 @@ export CPPFLAGS="-I/usr/local/opt/ruby/include"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export LADDER_LOG_LEVEL=warn
