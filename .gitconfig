@@ -6,3 +6,12 @@
 [user]
 	name = Piper McCorkle
 	email = piper@ladderlife.com
+[credential]
+	helper = ""
+	helper = manager-core
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[alias]
+	co = checkout
+	new-branch = co -b
+	nb = new-branch
