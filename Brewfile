@@ -21,6 +21,7 @@ brew "jq"
 brew "kubernetes-cli"
 brew "mas"
 brew "neovim"
+brew "node"
 brew "p7zip"
 brew "pandoc"
 brew "python@2", link: false
