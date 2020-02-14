@@ -14,9 +14,9 @@ brew "rlwrap"
 brew "clojure"
 brew "coreutils"
 brew "elasticsearch@2.4"
-brew "git"
+brew "git", link: false
 brew "git-lfs"
-brew "ipfs"
+brew "ipfs", link: false
 brew "jq"
 brew "kubernetes-cli"
 brew "mas"
