@@ -13,7 +13,7 @@ brew "bochs"
 brew "rlwrap"
 brew "clojure"
 brew "coreutils"
-brew "elasticsearch@2.4"
+brew "elasticsearch@2.4", restart_service: true
 brew "git", link: false
 brew "git-lfs"
 brew "ipfs", link: false
@@ -57,6 +57,8 @@ cask "typora"
 cask "virtualbox"
 cask "visual-studio-code"
 cask "zoomus"
+mas "Affinity Designer", id: 824171161
+mas "Affinity Photo", id: 824183456
 mas "Disk Speed Test", id: 425264550
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
