@@ -62,6 +62,7 @@ mas "Affinity Designer", id: 824171161
 mas "Affinity Photo", id: 824183456
 mas "Disk Speed Test", id: 425264550
 mas "GarageBand", id: 682658836
+mas "Honey", id: 1472777122
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Microsoft Remote Desktop", id: 1295203466
